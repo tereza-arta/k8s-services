@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia
+  labels:
+    app: kubia
+  namespace: lb
+spec:
+  containers:
+  - name: kubia-app
+    image: luksa/kubia
+    ports:
+    - containerPort: 8080
+      protocol: TCP
