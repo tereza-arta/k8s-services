@@ -1,5 +1,6 @@
 #Run command
-curl <node-internal-ip>:30007
+v1)curl <node-internal-ip>:30007 (or http://<node-internal-ip>:30007)
+v2)curl <cluster-ip>:<corresponding-port>  (only for access inside cluster)
 
 #Or in browser
 http://<node-internal-ip>:30007
