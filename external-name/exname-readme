@@ -4,6 +4,6 @@ kubectl run -i --tty <container-name> --image=busybox
 #Then in pod-containaer I executed the following command
 nslookup exname-svc
 
-#We can connect to an external service as follows
+#We canfrom the client pod connect to an external service as follows
  v1)curl http://exname-svc (or with full FQDN)
  V2)curl exname-svc
