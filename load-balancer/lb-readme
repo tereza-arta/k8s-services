@@ -2,3 +2,11 @@
 curl http://<lb-external-ip>
 
 #Or in browser
+
+#Or without configuring Load-balancer-ip, and without configuring nodeport-svc,
+#we can connect to lb-svc in the same way as in the case of nodepoert-svc like this
+#(That’s because a LoadBalancer service is an extension of a Node-Port service.)
+v1)curl <node-internal-ip>:<node-port> (or http://<node-internal-ip>:<node-port>)
+v2)minikube service <nodeport-svc-name>  (as result open in browser)
+new v3-1)minikube tunnel
+new v3-2)curl http://<nodeport-svc-cluster-ip>:<corresponding-port>   
